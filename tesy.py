@@ -7,4 +7,4 @@ page_walmart = requests.get(URL_walmart)
 
 soup_walmart = BeautifulSoup(page_walmart.content, 'html.parser')
 
-print(soup_walmart.get_text())
+print(soup_walmart.prettify())
