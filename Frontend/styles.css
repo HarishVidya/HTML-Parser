@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: white;
+}
+
+.input {
+    position: relative;
+    max-width: 610px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.input > input[type="text"]{
+    width: 80%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.input button {
+    margin: 0 15px;
+    background: #222;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
