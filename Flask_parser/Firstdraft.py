@@ -24,6 +24,15 @@ def results(searchterm):
     name3_metro = name2_metro.findNext(class_="pt-title")
     name4_metro = name3_metro.findNext(class_="pt-title")
 
+    if not price1_metro:
+        price1_metro = soup_metro.find(class_="pi-price price-update pi-price-promo")
+    if not price2_metro:
+        price2_metro = soup_metro.find(class_="pi-price price-update pi-price-promo")
+    if not price3_metro:
+        price3_metro = soup_metro.find(class_="pi-price price-update pi-price-promo")
+    if not price4_metro:
+        price4_metro = soup_metro.find(class_="pi-price price-update pi-price-promo")   
+    
     price1 = price1_metro.text
     price2 = price2_metro.text
     price3 = price3_metro.text
